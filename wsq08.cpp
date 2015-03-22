@@ -2,53 +2,41 @@
 using namespace std;
 
 int suma (int a, int b){
-	int suma=a+b;
-	return suma;
+	return a+b;
 }
 
 int resta (int a, int b){
-	int resta=a-b;
-	return resta;
+	return a-b;
 }
 
 int multiplicacion (int a, int b){
-	int multiplicacion=a*b;
-	return multiplicacion;
+	return a*b;
 }
 
 int division (int a, int b){
-	int division=a/b;
-	return division;
+	return a/b;
 }
 
 int residuo (int a, int b){
-	int residuo=a%b;
-	return residuo;
+	return a%b;
 }
 
 
 int main(){
 	int a, b;
+	cout<<"Porfavor dame 2 numeros: " << endl;
+	cin >> a;
+	cin >> b;
 
-	cout<<"Porfavor dame un numero: " << endl;
-	cin>>a;
-	cout<<"Di otro numero: " << endl;
-	cin>>b;
+	cout<<"La suma es: " << suma(a,b) << endl;
 
-int sum = suma (a,b);
-	cout<<"La suma es: " << sum << endl;
+	cout<<"La resta es: " << resta(a,b) << endl;
 
-int dif = resta (a,b);
-	cout<<"La resta es: " << dif << endl;
+	cout<<"La multiplicacion es: " << multiplicacion(a,b) << endl;
 
-int prod = multiplicacion (a,b);
-	cout<<"La multiplicacion es: " << prod << endl;
+	cout<<"La division es: " << division(a,b) << endl;
 
-int divi = division (a,b);
-	cout<<"La division es: " << divi << endl;
-
-int rem = residuo (a,b);
-	cout<<"La residuo es: " << rem << endl;
+	cout<<"La residuo es: " << residuo(a,b) << endl;
 
 	return 0;
 }
