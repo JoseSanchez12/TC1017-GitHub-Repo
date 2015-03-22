@@ -1,8 +1,23 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
+int MCD (int a, int b){
+
+	int x = a , y = b , res;
+	 do{
+		 res = remainder(x,y);
+		 if( res < 0 ){
+		 res = res * -1;
+}
+		 x = y;
+		 y = res;
+} while(res != 0);
+		return x;
+}
+
 int main(){
-	int a, b, mcd;
+	float a, b;
 
 cout<<"Pon un numero porfavor: "; 
 	cin >> a ;
@@ -10,15 +25,7 @@ cout<<"Pon un numero porfavor: ";
 cout<<"Pon el segundo numero porfavor: ";
 	cin >> b ;
 
-for (int i = 1; i<=a && i<=b; i++){
-
-		if( a % i == 0 && b % i == 0 ){
-	
-			mcd = i;
-	}
-}
-
-cout<<"El maximo comun divisor es: " << mcd << endl;
+cout<<"El maximo comun divisor es: " << MCD(a,b) << endl;
 
 return 0;
 }
