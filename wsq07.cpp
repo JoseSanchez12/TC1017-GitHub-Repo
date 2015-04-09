@@ -2,17 +2,28 @@
 using namespace std;
 
 int main(){
+	
 	int num1, num2, num3, sum=0;
 
-cout << "Please give us the lower bond:";
-cin>>num1;
-cout << "Please give us the upper bond:"; 
-cin>>num2;
-num3=num1;
+cout << "Dime el numero mas bajo: ";
+
+cin >> num1;
+
+cout << "Dime el numero mas alto: "; 
+
+cin >> num2;
+
+num3 = num1;
+
 do{
-	sum=sum+num3;
-	num3=num3+1;
-	} while (num3<=num2);
-	cout << "The sum of " << num1 << " to " << num2 << " is = " << sum << endl;
+	sum = sum + num3;
+	
+	num3 = num3 + 1;
+} 
+
+while (num3 <= num2);
+	
+	cout << "La suma de " << num1 << " hasta " << num2 << " es = " << sum << endl;
+	
 	return 0;
 }

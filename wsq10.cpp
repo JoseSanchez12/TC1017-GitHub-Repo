@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 using namespace std;
 
 int main(){
@@ -13,14 +13,14 @@ cin>>a;
 float array [a];
 int c=0;
 
-do {
+do{
 cout<<"Porfavor dime un valor: ";
-cin>> array[c]; ++c;
+cin>> array[c]; c++;
 }
 
 while (c<(a-1));
 
-cout<<"Y el ultimo valor: ";
+cout<<"Dime el ultilo valor: ";
 cin>> array[c];
 
 for (b=0; b<a; ++b)
@@ -46,5 +46,4 @@ float stddes = sqrt(des/a);
 
 cout<<"La desviacion estandar es de: "<<stddes<<endl;
 
-	return 0;
-}
+	return 0;}
